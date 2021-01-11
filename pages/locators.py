@@ -12,7 +12,8 @@ class LoginPageLocators:
 
 
 class ProductPageLocators:
-    URL_WITH_PROMO = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+    # URL_WITH_PROMO = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+    URL_WITH_PROMO = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/coders-at-work_207/?promo=newYear2019"
     URL = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-shellcoders-handbook_209/"
     SUBMIT_BUTTON = (By.CLASS_NAME, "btn-add-to-basket")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages div>div")

@@ -23,3 +23,9 @@ class ProductPage(BasePage):
         # print("------------------------ DEBUG INFO FOR check_that_basket_value_changed function------------------------")
         # print(self.browser.find_elements(*ProductPageLocators.SUCCESS_MESSAGE_PRICE)[0].text)
         assert self.browser.find_elements(*ProductPageLocators.SUCCESS_MESSAGE_PRICE)[0].text == "Your basket total is now " + self.product_price
+
+    def check_that_success_message_is_not_present(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is on page"
+
+    def check_that_success_message_disappeared(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success message still on page"
